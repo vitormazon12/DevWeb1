@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content"width=device-width, initial-scale=1.0">
+        <title>Aula 2</title>
+    </head>
+    <body>
+        <header>
+            <h1>Aulas - HTML</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#paragrafo">Parágrafo</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#div">Div</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Aula 1</h1>
+            <section id="paragrafo">
+                <h2>Parágrafos</h2>
+                <p> < p > Este é um parágrafo. </p>
+                <p>Este é outro parágrafo.</p>
+            </section>
+            
+            <section id="listas">
+                <h2>Listas</h2>
+                <h3> < ul > Lista não ordenada</h3>
+                <ul>
+                    <li> < li > Primeiro item</li>
+                    <li> Outro item</li>
+                    <ul>
+                        <li>Outro item 1</li>
+                        <li>Outro item 2</li>
+                    </ul>
+                </ul>
+
+                <h3>< ol > Lista ordenada</h3>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+
+                <h3>Lista de definição</h3>
+                <dl>
+                    <dt>Aula 1</dt>
+                    <dd>Git e GitHub</dd>
+                    <dd>Commits</dd>
+                    <dt>Aula 2</dt>
+                    <dd>Etrutura HTML</dd>
+                </dl>
+                </section>
+
+                <section id="links">
+                    <h2>Links</h2>
+                    <a href="https://www.google.com" target="_blank">Site Google</a>
+                </section>
+
+                <section id="imagens">
+                    <img src="BemVindo.gif" target="_blank"></img>
+                    <p></p>
+                    <a href="https://fatecararas.cps.sp.gov.br/" target="_blank">
+                        <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/19/2024/03/fatec-araras-antonio-brambilla.png" alt="Logo da FATEC Araras">
+                    </a>
+                </section>
+            
+            <section id="tabelas">
+                <h2>Aula 2<p>Tabelas</p></h2>
+
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Perfil
+                            </th>
+                            <th scope="col">
+                                Nome
+                            </th>
+                            <th scope="col">
+                                Sobrenome
+                            </th>
+                            <th scope="col">
+                                Idade
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                Aluno
+                            </td>
+                            <td> 
+                                Maria
+                            </td>
+                            <td>
+                                Silva
+                            </td>
+                            <td>
+                                25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                José
+                            </td>
+                            <td>
+                                Souza
+                            </td>
+                            <td>
+                                30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Jorge
+                            </td>
+                            <td>
+                                Ribeiro
+                            </td>
+                            <td>
+                                40
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th scope="row" colspan="3">
+                            Total
+                        </th>
+                        <td>
+                            95
+                        </td>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="div">
+            <h2> Div</h2>
+                <div>
+                    <p>
+                        Teste
+                    </p>
+                    <p>
+                        Outro
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Aula de Desenvolvimento Web I</p>
+        </footer>
+    </body>
+</html>
