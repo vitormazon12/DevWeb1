@@ -1,2 +1,2 @@
-# aula1-dw
-Teste de aula 1 de desenvolvimento web
+# Desenvolvimento Web
+Repositório para aulas de desenvolvimeno web da Fatec Araras
