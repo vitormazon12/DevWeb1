@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    
+<h1>Variáveis</h1>
+
+<script>
+    var idade = 20;
+    console.log(idade);
+
+    idade = "10";
+    console.log(idade);
+
+    if (1==1) {
+        var item1 = 50;
+        let item2 = 100;
+    }
+
+    console.log(item1);
+    // console.log(item2); // ocasiona erro: Uncaught ReferenceError: item2 is not defined
+
+    const pi = 3.14;
+    console.log(pi);
+    // pi = 5; // Uncaught TypeError: Assignment to constant variable.
+
+    var soma = 5 + 6;
+    var subtracao = 6 - 4;
+    var multiplicacao = 2 * 3;
+    var divisao = 15 / 2;
+    var exponenciacao = 5 ** 2;
+    var resto = 8 % 3;
+    console.log('5+6=' + soma);
+    console.log('6-4=' + subtracao);
+    console.log('2*3=' + multiplicacao);
+    console.log('15/2=' + divisao);
+    console.log('5**2=' + exponenciacao);
+    console.log('8%3=' + resto);
+
+    var atribuicao = 10;
+    console.log(atribuicao);
+    atribuicao += 2;
+    console.log(atribuicao);
+    atribuicao -= 5;
+    console.log(atribuicao);
+
+    // && = E
+    console.log("true && true = " + (true && true) );
+    console.log("true && false = " + (true && false) );
+    console.log("false && false = " + (false && false) );
+
+    // || = Ou
+    console.log("true || true = " + (true || true) );
+    console.log("true || false = " + (true || false) );
+    console.log("false || false = " + (false || false) );
+
+    // ! = Negação
+    console.log("!true = " + (!true) );
+    console.log("!false = " + (!false) );
+
+    console.log("coerção: 2 == '2'" + (2 == '2'));
+    console.log("sem coerção: 2 === '2'" + (2 === '2'));
+
+    console.log("coerção: 2 != '2'" + (2 != '2'));
+    console.log("sem coerção: 2 !== '2'" + (2 !== '2'));
+
+</script>
+
+
+</body>
+</html>
