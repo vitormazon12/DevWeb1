@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="numero" id="id_numero">
+        <button type="button" id="botao">Clique!</button>
+    </form>
+
+    <script>
+
+        var botao = document.getElementById("botao");
+        botao.addEventListener("click", function(){
+
+            let valor = document.getElementsByName("numero")[0].value;
+            
+            if(valor>0){
+                window.alert(`${valor} é positivo`);
+            } else if(valor<0){
+                window.alert(`${valor} é negativo`);
+            } else{
+                window.alert(`${valor} é zero`);
+            }
+        });
+
+        var valor = 10;
+
+        switch(valor){
+            case 1: 
+                window.alert('é um');
+                break;
+            case 10: 
+                window.alert('é dez');
+                break;
+            default: 
+                window.alert(" default");
+        }
+
+    </script>
+</body>
+</html>

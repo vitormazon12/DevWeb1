@@ -53,8 +53,23 @@
             
             let resposta = document.getElementById("resultado");
             resposta.innerHTML = resultado;
+
+            let botao = document.getElementById("botao");
+            botao.classList.add("btn-success");
+
+            botao.classList.toggle("btn-success");
         })
        
+        var inputs = document.getElementsByTagName("input");
+        
+        for(let input of inputs){
+            console.log(input);
+        }
+
+        var inputs2 = document.querySelectorAll("input#item2");
+        for(let input of inputs2){
+            console.log(input);
+        }
 
     </script>
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+</head>
+<body>
+    <script>
+        const valores = ["Javascript", "HTML", "CSS"];
+
+        for (let i=0; i < valores.length; i++){
+            console.log(`${i}: ${valores[i]}`);
+        }
+
+        /* Formato para listas */
+        for (let valor of valores){
+            console.log(valor);
+        }
+
+        let i=0;
+        while(i < valores.length){
+            console.log(`${i}: ${valores[i]}`);
+            i++;
+        }
+
+        i=0;
+        do{
+            console.log(`${i}: ${valores[i]}`);
+            i++;
+        }while(i < valores.length)
+
+
+    </script>
+</body>
+</html>
