@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    notas da Turma = [8.5, 4.0, 11.5, 9.2, -1.0, 6.5, 7.0, 5.5];
+    <script>
+        
+        const notasTurma = [8.5, 4.0, 11.5, 9.2, -1.0, 6.5, 7.0, 5.5];
+
+        var aprovados=0;
+        var reprovados=0;
+
+        for(let nota of notasTurma){
+            if(nota<0 || nota>10){
+                console.log(`${nota} é uma nota inválida!`)
+            } else if(nota<6){
+                console.log("Em Recuperação (Conceito D): " + nota);
+                reprovados++;
+            } else if(nota<6.9){
+                console.log("Aprovado / Regular (Conceito C): " + nota);
+                aprovados++;
+            } else if(nota<8.9){
+                console.log("Desempenho Bom (Conceito B): " + nota);
+                aprovados++;
+            } else{
+                console.log("Desempenho Excelente (Conceito A): " + nota);
+                aprovados++;
+            }
+        }
+
+        console.log(`Aprovados: ${aprovados}`);
+        console.log(`Reprovados: ${reprovados}`);
+
+    </script>
+</body>
+</html>
