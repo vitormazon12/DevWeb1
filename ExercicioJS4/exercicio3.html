@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="GET" id="formulario_tarefa">
+        <label for="tarefa">Tarefa</label>
+        <input type="text" name="tarefa" id="tarefa">
+
+        <button type="button" id="botao_tarefa">Adicionar</button>
+    </form>
+
+    <ol id="lista">
+       
+    </ol>
+
+    <script>
+        var botao = document.getElementById("botao_tarefa");
+
+        botao.addEventListener("click", function(){
+            let tarefa = document.getElementById("tarefa").value;
+
+            let lista = document.getElementById("lista");
+            let li_lista = document.createElement("li");
+
+            li_lista.textContent = tarefa;
+
+            lista.appendChild(li_lista);
+        });
+    </script>
+</body>
+</html>

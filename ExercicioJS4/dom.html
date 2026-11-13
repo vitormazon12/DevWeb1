@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <form method="GET">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="idade">
+
+        <button type="button" id="botao">Adicionar</button>
+    </form>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr>
+                <td>João</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var botao = document.getElementById("botao");
+
+        botao.addEventListener("click", function(){
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById("idade").value;
+
+            let tabela = document.getElementById("tabela");
+            let linha = document.createElement("tr");
+            let td_nome = document.createElement("td");
+            let td_idade = document.createElement("td");
+
+            td_nome.textContent = nome;
+            td_idade.textContent = idade;
+
+            linha.appendChild(td_nome);
+            linha.appendChild(td_idade);
+            tabela.appendChild(linha);
+        });
+    </script>
+</body>
+</html>
